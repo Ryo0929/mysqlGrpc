@@ -15,6 +15,7 @@
     <description>mysqlJDBC</description>
     <properties>
         <java.version>11</java.version>
+        <start-class>com.example.mysqljdbc.grpcServer</start-class>
     </properties>
     <dependencies>
         <dependency>
