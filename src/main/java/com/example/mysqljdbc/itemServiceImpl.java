@@ -29,5 +29,8 @@ public class itemServiceImpl extends db_servicesGrpc.db_servicesImplBase{
         } catch (SQLException e) {
             System.out.println(e.toString());
         }
+        Empty emptyResponse=Empty.newBuilder().build();
+        empty.onNext(emptyResponse);
+        empty.onCompleted();
     }
 }
