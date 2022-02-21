@@ -7,6 +7,7 @@ import org.springframework.boot.SpringApplication;
 import java.io.IOException;
 
 public class grpcServer {
+
     public static void main(String[] args) throws IOException, InterruptedException {
 
         Server server = ServerBuilder.forPort(8050).addService(new itemServiceImpl()).build();
@@ -14,4 +15,6 @@ public class grpcServer {
         server.start();
         server.awaitTermination();
     }
+
+
 }
